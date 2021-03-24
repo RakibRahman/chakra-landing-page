@@ -17,7 +17,7 @@
       <nav>
         <img src="img/bg00.png" alt="" />
         <ul>
-          <li><a id="logIn" href="#">Log in</a></li>
+          <li><a id="logIn"  href="#">Log in</a></li>
           <li><a id="register" href="#">Register</a></li>
         </ul>
       </nav>
@@ -26,24 +26,31 @@
     <section id="wrapper">
       <div class="logo">
         <img
-          class="animate__animated animate__jackInTheBox"
+          
           src="img/bg00.png"
           alt=""
         />
       </div>
       <div class="info">
-        <h1 id="title">chakra</h1>
+        <h1 id="title">Chakra</h1>
         <p class="intro">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam fuga
           corporis voluptatum quos dolorum doloremque molestias necessitatibus
           repudiandae quo, perspiciatis nobis temporibus vero officiis iste nisi
-          adipisci, sed est iure. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit.
+          adipisci, sed est iure. 
         </p>
         <button id="getStart">Get Started</button>
+        <p class="already">Got an account already? <a id="signIn" href="#">Sign in</a></p>
       </div>
+      
     </section>
-
+    <footer id="footer">
+      <p>Chakra | 2021</p>
+      <p>This webpage was made for learning purposes.</p>
+      <div class="icons">
+        <img src="img/Codeopen_white.png" alt="codepen"><img src="img/Telegram_white.png" alt="Telegram_white"><img src="img/RSS_white.png" alt="rss">
+      </div>
+    </footer>
   <div id="formWrapper">
         <div id="form">
             <form action="">
@@ -60,7 +67,7 @@
                   <input type="text" placeholder="Enter Username" name="uname" required>
                  <div id="email">
                       <label for="mail"><strong>E-mail</strong></label>
-                      <input type="text" placeholder="Enter E-mail" name="mail" required>
+                      <input type="text" placeholder="Enter E-mail" name="mail" novalidate>
                  </div>
                   <label for="psw"><strong>Password</strong></label>
                   <input type="password" placeholder="Enter Password" name="psw" required>
@@ -70,6 +77,8 @@
               </form>
         </div>
   </div>
+
+
   <script src="app.js"></script>
   </body>
 </html>
