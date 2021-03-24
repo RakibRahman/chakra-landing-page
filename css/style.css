@@ -91,7 +91,7 @@ header nav ul li a {
   font-size: 3rem;
 }
 
-.info p {
+.info .intro {
   color: #676767;
   font-size: 1.5rem;
   line-height: 1.6;
@@ -103,6 +103,15 @@ header nav ul li a {
 }
 
 #formWrapper {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+#formWrapper #form {
+  width: 420px;
   display: flex;
   justify-content: center;
   font-family: Roboto, Arial, sans-serif;
@@ -110,12 +119,31 @@ header nav ul li a {
   /* Change styles for span on extra small screens */
 }
 
-#formWrapper form {
+#formWrapper #form .signUp {
+  position: relative;
+}
+
+#formWrapper #form .signUp h1 {
+  margin-top: 5px;
+}
+
+#formWrapper #form .signUp button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: transparent;
+  width: 20px;
+  font-size: 20px;
+  margin-top: -10px;
+  margin-right: 5px;
+}
+
+#formWrapper #form form {
   border: 5px solid #f1f1f1;
 }
 
-#formWrapper input[type="text"],
-#formWrapper input[type="password"] {
+#formWrapper #form input[type="text"],
+#formWrapper #form input[type="password"] {
   width: 100%;
   padding: 16px 8px;
   margin: 8px 0;
@@ -124,22 +152,21 @@ header nav ul li a {
   box-sizing: border-box;
 }
 
-#formWrapper .icon {
+#formWrapper #form .icon {
   border: 1px solid #fff;
   margin-top: 10px;
   display: flex;
   justify-content: center;
-  color: #4286f4;
 }
 
-#formWrapper .icon img {
+#formWrapper #form .icon img {
   width: 150px;
   height: 150px;
   object-fit: contain;
 }
 
-#formWrapper button {
-  background-color: #4286f4;
+#formWrapper #form button {
+  background-color: #7289da;
   color: white;
   padding: 14px 0;
   margin: 10px 0;
@@ -148,33 +175,33 @@ header nav ul li a {
   width: 48%;
 }
 
-#formWrapper h1 {
+#formWrapper #form h1 {
   text-align: center;
   fone-size: 18;
 }
 
-#formWrapper button:hover {
+#formWrapper #form button:hover {
   opacity: 0.8;
 }
 
-#formWrapper .formcontainer {
+#formWrapper #form .formcontainer {
   text-align: center;
   margin: 24px 50px 12px;
 }
 
-#formWrapper .container {
+#formWrapper #form .container {
   padding: 16px 0;
   text-align: left;
 }
 
-#formWrapper span.psw {
+#formWrapper #form span.psw {
   float: right;
   padding-top: 0;
   padding-right: 15px;
 }
 
 @media screen and (max-width: 300px) {
-  #formWrapper span.psw {
+  #formWrapper #form span.psw {
     display: block;
     float: none;
   }
