@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+}
+
+fieldset,
+img {
+  border: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 20px;
+}
+
+#wrapper {
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+}
+
+header {
+  border: 1px solid red;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+header nav img {
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+header nav ul {
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li {
+  padding: 5px 10px;
+  border: 2px solid #4d4d4d;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+}
+
+.info p {
+  color: #676767;
+  font-size: 1.5rem;
+  line-height: 1.6;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+#formWrapper {
+  display: flex;
+  justify-content: center;
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 15px;
+  /* Change styles for span on extra small screens */
+}
+
+#formWrapper form {
+  border: 5px solid #f1f1f1;
+}
+
+#formWrapper input[type="text"],
+#formWrapper input[type="password"] {
+  width: 100%;
+  padding: 16px 8px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#formWrapper .icon {
+  border: 1px solid #fff;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  color: #4286f4;
+}
+
+#formWrapper .icon img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+#formWrapper button {
+  background-color: #4286f4;
+  color: white;
+  padding: 14px 0;
+  margin: 10px 0;
+  border: none;
+  cursor: grab;
+  width: 48%;
+}
+
+#formWrapper h1 {
+  text-align: center;
+  fone-size: 18;
+}
+
+#formWrapper button:hover {
+  opacity: 0.8;
+}
+
+#formWrapper .formcontainer {
+  text-align: center;
+  margin: 24px 50px 12px;
+}
+
+#formWrapper .container {
+  padding: 16px 0;
+  text-align: left;
+}
+
+#formWrapper span.psw {
+  float: right;
+  padding-top: 0;
+  padding-right: 15px;
+}
+
+@media screen and (max-width: 300px) {
+  #formWrapper span.psw {
+    display: block;
+    float: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
