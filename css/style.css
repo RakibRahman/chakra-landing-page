@@ -47,6 +47,7 @@ header nav {
 }
 
 header nav img {
+  margin-top: 20px;
   margin-right: auto;
   width: 100px;
   height: 100px;
@@ -270,7 +271,7 @@ header nav ul li a {
 }
 
 footer {
-  margin-top: 20px;
+  margin: 20px 0;
   display: grid;
   place-items: center;
   gap: 10px;
