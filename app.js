@@ -7,6 +7,8 @@ const logIn = document.getElementById("logIn");
 const closeForm = document.getElementById("closeForm");
 const email = document.getElementById("email");
 const title = document.getElementById("titleForm");
+const footer = document.getElementById("footer");
+const signIn = document.getElementById("signIn");
 
 const hideEmail = () => {
   showForm.style.display = "flex";
@@ -14,6 +16,7 @@ const hideEmail = () => {
   header.style.display = "none";
   email.style.display = "none";
   title.innerHTML = "Log In";
+  footer.style.display = "none";
 };
 
 const visibleForm = () => {
@@ -22,17 +25,19 @@ const visibleForm = () => {
   header.style.display = "none";
   email.style.display = "block";
   title.innerHTML = "Sign Up";
+  footer.style.display = "none";
 };
 
 getForm.addEventListener("click", visibleForm);
-
 register.addEventListener("click", visibleForm);
 
-logIn.addEventListener("click", hideEmail, true);
+logIn.addEventListener("click", hideEmail);
+signIn.addEventListener("click", hideEmail);
 
 //Close the form
 closeForm.addEventListener("click", function () {
   showForm.style.display = "none";
   wrapperMain.style.display = "flex";
   header.style.display = "block";
+  footer.style.display = "grid";
 });
